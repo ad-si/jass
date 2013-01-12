@@ -1,0 +1,74 @@
+(function() {
+
+	var red = 'red',
+		green = 'green',
+		jass = function(array) {
+		}
+
+
+	//=======
+	div.something = {
+		fontSize: green,
+		backgroundColor: red
+	}
+
+
+	//Object Style
+	var style = {
+		h1: {
+			fontSize: '10px',
+			color: 'rgb(234,234,234)'
+		},
+		ptest: {
+			margin: '10px 10px 10px 10px'
+		}
+	}
+
+
+	jass(div, {
+		fontSize: 18,
+		backgroundColor: red
+	})
+
+
+	var div = 'div',
+		px = 'px',
+		h2 = 'h2',
+		span = 'span',
+		fontSize = function() {
+		},
+		margin = function() {
+		},
+		lineHeight = function() {
+		},
+		color = function() {
+		}
+
+
+	div(
+		fontSize(20, px),
+		margin(20, 30, 34, 12)
+	)
+
+
+	jass(
+		["div",
+			fontSize(20, px),
+			margin(20, 30, 34, 12),
+			[div,
+				[h2],
+				[span]
+			]
+		],
+		["p.test",
+			fontSize(20, px),
+			margin(20, 30, 34, 12),
+			[div,
+				[h2],
+				[span]
+			]
+		]
+	);
+
+}())
+
